@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Voyaaage</title>
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon-32x32.png">
+  </head>
+  <body>
+    <div id="main">
+      <div class="navcontainer">
+        <img src="images/logo.png" />
+        <h1><a href="index.html" class = "titleee">Voyaaage</a></h1>
+        <div>
+          <ul class="navcomponents">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ticketing">
+        <div class="ticketing-main">
+          <div class="modes">
+            <button>FLIGHTS <i class="ri-flight-takeoff-line"></i></button>
+            <button class="inactive">
+              HOTEL <i class="ri-hotel-bed-fill"></i>
+            </button>
+            <button class="inactive">
+              CAB HIRE <i class="ri-taxi-fill"></i>
+            </button>
+          </div>
+
+          <div class="logic">
+            <div class="types">
+              <div class="flight-types">
+                <input type="radio" id="round-trip" name="mode" />
+                <label for="round-trip">Round-Trip</label>
+                <input type="radio" id="one-way" name="mode" />
+                <label for="one-way">One-Way</label>
+                <input type="radio" id="multi-city" name="mode" />
+                <label for="multi-city">Multi-City</label>
+              </div>
+              <div class="direct-flight">
+                <input type="checkbox" id="flight-mode" />
+                <label for="flight-mode">Direct flight only</label>
+              </div>
+            </div>
+
+            <div class="flight-condition">
+              <h3>From</h3>
+              <h3>To</h3>
+              <h3>Cabin class</h3>
+            </div>
+            <div class="flight-condition-input">
+              <select name="from" id="from">
+                <option value="New York">New York</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Japan">Japan</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Osaka">Osaka</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Istanbul">Istanbul</option>
+                <option value="California">California</option>
+              </select>
+
+              <select name="to" id="to" class="dropdown-second">
+                <option value="New York">Delhi</option>
+                <option value="Delhi">New York</option>
+                <option value="Japan">Japan</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Osaka">Osaka</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Istanbul">Istanbul</option>
+                <option value="California">California</option>
+              </select>
+
+              <select name="cabin-class" id="cabin-class">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="Luxury">Luxury</option>
+              </select>
+            </div>
+
+            <div class="add-nearby">
+              <div class="input-label">
+                <input type="checkbox" id="nearby-1" />
+                <label for="nearby-1">Add nearby airports</label>
+              </div>
+
+              <div class="input-label-2">
+                <input type="checkbox" id="nearby-2" />
+                <label for="nearby-2">Add nearby airports</label>
+              </div>
+            </div>
+
+            <div class="departure-text">
+              <h3>Departure</h3>
+              <h3>Return</h3>
+            </div>
+            <div class="departure-inputs">
+              <input type="date" name="departure-date" id="departure-date" />
+              <input type="date" name="departure-date" id="departure-date" />
+            </div>
+
+            <div class="traveller-type-text">
+              <h3>Children</h3>
+              <h3>Adult</h3>
+            </div>
+            <div class="traveller-type-input">
+              <input type="number" name="children" id="type-input" />
+              <input type="number" name="Adult" id="type-input" />
+            </div>
+            <div class="submitBtn">
+              <button class="bookTicket">Book Ticket</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="persuasion">
+        <h1>Book from voyaaage | Experience never before</h1>
+      </div>
+
+      <div class="footer">
+        <div class="overlay">
+            <div class="footer-text">
+            <div class="question">
+                <h2>Q. &nbsp; Why should you chose us?</h2>
+                <h2>Answer : &nbsp;  We're the best</h2>
+            </div>
+            <div class="terms">
+                <h4>FAQ's</h4>
+                <h4>Terms and conditions</h4>
+                <h4>Privacy Notice</h4>
+                <h4>Track requests</h4>
+                <h4>Buy developer a coffee</h4>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </body>
+</html>
